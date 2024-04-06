@@ -3,7 +3,8 @@ let listBonito = ["soy", "eres", "te quiere"];
 let listFin = ["muy pro", "demasiado", "bello", "genial"];
 
 function randomMessage(){
-
+    const listOfIndex = generateIndex();
+    return listNombre[listOfIndex[0]] + " " + listBonito[listOfIndex[1]] + " " + listFin[listOfIndex[2]]
 }
 
 function generateIndex(){
@@ -14,4 +15,4 @@ function generateIndex(){
     return [index1, index2, index3]
 }
 
-console.log(generateIndex())
+console.log(randomMessage());
